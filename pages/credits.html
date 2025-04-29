@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple SPA</title>
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body class="h-screen w-full">
+    <div class="bg-gray-100 h-full w-full flex flex-col">
+      <header
+        class="bg-sky-700 flex flex-col sm:flex-row items-center justify-center gap-4 p-4"
+      >
+        <a href="../index.html"
+          ><img
+            src="../nia-logo.png"
+            alt="administration logo"
+            class="size-14 sm:size-14 md:size-16 lg:size-18 xl:size-20"
+        /></a>
+        <div class="flex flex-col text-white text-center sm:text-left">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold">
+            National Irrigation Administration
+          </h1>
+          <h2 class="text-xl sm:text-2xl md:text-1xl">
+            Cagaycay River Irrigation System
+          </h2>
+        </div>
+      </header>
+      <div
+        class="flex flex-row bg-gray-300 w-full h-full overflow-hidden text-sky-900"
+      >
+        <aside class="bg-blue-100 flex flex-col w-70 p-4 gap-2">
+          <a
+            href="../index.html"
+            id="home-link"
+            class="p-2 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 rounded"
+            ><i class="uil uil-home text-blue-500 mr-2"></i>Agency Profile</a
+          >
+
+          <a
+            href="./users.html"
+            id="users-link"
+            class="p-2 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 rounded"
+            ><i class="uil uil-users-alt text-blue-500 mr-2"></i>Users</a
+          >
+          <a
+            href="./irrigation-association.html"
+            id="irrigation-association-link"
+            class="p-2 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 rounded"
+            ><i class="uil uil-water text-blue-500 mr-2"></i>Irrigation
+            Association</a
+          >
+          <a
+            href="./water-distribution-scheduler.html"
+            id="water-distribution-scheduler-link"
+            class="p-2 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 rounded"
+            ><i class="uil uil-schedule text-blue-500 mr-2"></i>Water
+            Distribution Scheduler</a
+          >
+          <a
+            href="./credits.html"
+            id="credits-link"
+            class="p-2 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 rounded"
+            ><i class="uil uil-credit-card text-blue-500 mr-2"></i>Credits</a
+          >
+        </aside>
+        <main id="content" class="bg-white flex-1 p-4 overflow-auto">
+          <button
+            id="toggle-button"
+            class="p-2 mb-4 transition duration-100 ease-in-out hover:bg-blue-200 hover:text-blue-800 flex items-center bg-blue-100 rounded-lg"
+          >
+            <i class="uil uil-bars text-blue-500"></i>
+          </button>
+          <div class="flex flex-col justify-center w-5/6 mx-auto">
+            <h1 class="text-2xl font-bold mb-4">Credits</h1>
+            <p class="text-gray-700">
+              This project was developed as part of the National Irrigation
+              Administration's initiative to improve water distribution systems.
+              Special thanks to the following contributors:
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-700">
+              <li>John Doe - Project Manager</li>
+              <li>Jane Smith - Lead Developer</li>
+              <li>Michael Brown - UI/UX Designer</li>
+              <li>Emily Davis - QA Specialist</li>
+            </ul>
+            <p class="text-gray-700 mt-4">
+              For inquiries or feedback, please contact us at
+              <a href="mailto:support@nia.gov" class="text-blue-500 underline"
+                >support@nia.gov</a
+              >.
+            </p>
+            <p class="text-gray-500 mt-6 italic">
+              Note: This content is a placeholder and will be updated with real
+              information soon.
+            </p>
+          </div>
+        </main>
+        <script src="../sidebar-toggle.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
