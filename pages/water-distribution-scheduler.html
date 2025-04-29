@@ -79,13 +79,19 @@
             <i class="uil uil-bars text-blue-500"></i>
           </button>
           <div class="flex flex-col w-full sm:w-3/5 md:w-1/2 lg:w-2/5 mx-auto">
+            <div
+              id="confirmation-message"
+              class="hidden p-4 mb-10 bg-green-100 text-green-700 border border-green-500 rounded"
+            >
+              Form submitted successfully!
+            </div>
             <h2
               class="text-lg sm:text-1xl md:text-2xl font-semibold mb-6 sm:mb-10 text-center"
             >
               Water Distribution Scheduler Irrigation Association List
             </h2>
 
-            <form class="flex flex-col gap-4">
+            <form class="flex flex-col gap-4" id="scheduler-form">
               <label class="flex flex-col">
                 <span class="font-medium">Select Date</span>
                 <input
@@ -127,6 +133,20 @@
                 Send
               </button>
             </form>
+            <script>
+              const form = document.getElementById("scheduler-form");
+              const confirmationMessage = document.getElementById(
+                "confirmation-message"
+              );
+
+              form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                confirmationMessage.classList.remove("hidden");
+                setTimeout(() => {
+                  confirmationMessage.classList.add("hidden");
+                }, 4000);
+              });
+            </script>
           </div>
         </main>
         <script src="../sidebar-toggle.js"></script>
